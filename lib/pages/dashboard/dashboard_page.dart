@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/data/datasources/auth_local_datasource.dart';
-import 'package:quantum/pages/auth/auth_page.dart';
-import 'package:quantum/pages/home/home_page.dart';
+import 'package:quantum_buyer_app/data/datasources/auth_local_datasource.dart';
+import 'package:quantum_buyer_app/pages/auth/auth_page.dart';
+import 'package:quantum_buyer_app/pages/home/home_page.dart';
 
 import '../../bloc/logout/logout_bloc.dart';
 import '../../utils/images.dart';
@@ -154,3 +154,5 @@ class _HomePageState extends State<DashboardPage> {
     return list;
   }
 }
+
+

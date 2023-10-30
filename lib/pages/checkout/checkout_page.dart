@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/bloc/order/order_bloc.dart';
-import 'package:quantum/data/models/request/order_request_model.dart';
-import 'package:quantum/utils/price_ext.dart';
+import 'package:quantum_buyer_app/bloc/order/order_bloc.dart';
+import 'package:quantum_buyer_app/data/models/request/order_request_model.dart';
+import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../bloc/checkout/checkout_bloc.dart';
 import '../../utils/color_resources.dart';

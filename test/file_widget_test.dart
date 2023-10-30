@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quantum/file_widget.dart';
+import 'package:quantum_buyer_app/file_widget.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 
-import 'package:quantum/data/models/products_response_model.dart';
-import 'package:quantum/utils/price_ext.dart';
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
+import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../../utils/color_resources.dart';
 import '../../../utils/custom_themes.dart';
 import '../../../utils/dimensions.dart';
 import '../../../utils/images.dart';
-
+import '../../base_widgets/rating_bar.dart';
 import '../../product/product_detail.dart';
 
 class ProductItemWidget extends StatelessWidget {
@@ -59,7 +60,7 @@ class ProductItemWidget extends StatelessWidget {
                   placeholder: Images.placeholder,
                   fit: BoxFit.cover,
                   height: MediaQuery.of(context).size.width / 2.45,
-                  image: product.imageProduct!,
+                  image: GlobalVariables.baseUrl + product.imageProduct!,
                   imageErrorBuilder: (c, o, s) => Image.asset(
                       Images.placeholder,
                       fit: BoxFit.cover,

@@ -1,6 +1,6 @@
 {
-    "name": "quantum",
-    "short_name": "quantum",
+    "name": "quantum_buyer_app",
+    "short_name": "quantum_buyer_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

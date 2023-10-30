@@ -124,3 +124,4 @@ class _BannerWidgetState extends State<BannerWidget> {
     );
   }
 }
+

@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:quantum/common/global_variables.dart';
-import 'package:quantum/data/models/categories_response_model.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
+import 'package:quantum_buyer_app/data/models/categories_response_model.dart';
 import 'package:http/http.dart' as http;
 
 class CategoryRemoteDatasource {

@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:quantum/data/models/products_response_model.dart';
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'checkout_event.dart';

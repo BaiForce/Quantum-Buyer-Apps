@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../utils/color_resources.dart';
 import '../../../utils/dimensions.dart';
 import '../../../utils/images.dart';
+import 'favourite_button.dart';
 
 class ProductImageView extends StatelessWidget {
   final String image;

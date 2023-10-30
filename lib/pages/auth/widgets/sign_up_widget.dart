@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/bloc/register/register_bloc.dart';
-import 'package:quantum/data/datasources/auth_local_datasource.dart';
-import 'package:quantum/data/models/request/register_request_model.dart';
+import 'package:page_transition/page_transition.dart';
+import 'package:quantum_buyer_app/bloc/register/register_bloc.dart';
+import 'package:quantum_buyer_app/data/datasources/auth_local_datasource.dart';
+import 'package:quantum_buyer_app/data/models/request/register_request_model.dart';
 
 import '../../../utils/color_resources.dart';
 import '../../../utils/custom_themes.dart';

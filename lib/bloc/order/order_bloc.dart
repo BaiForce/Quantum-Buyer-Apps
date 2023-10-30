@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:quantum/data/datasources/order_remote_datasource.dart';
-import 'package:quantum/data/models/order_response_model.dart';
-import 'package:quantum/data/models/request/order_request_model.dart';
+import 'package:quantum_buyer_app/data/datasources/order_remote_datasource.dart';
+import 'package:quantum_buyer_app/data/models/order_response_model.dart';
+import 'package:quantum_buyer_app/data/models/request/order_request_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'order_event.dart';

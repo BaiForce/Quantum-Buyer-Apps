@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/bloc/categories/categories_bloc.dart';
+import 'package:quantum_buyer_app/bloc/categories/categories_bloc.dart';
 
 import '../../bloc/checkout/checkout_bloc.dart';
 import '../../bloc/products/products_bloc.dart';

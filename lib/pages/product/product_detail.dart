@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 
-import 'package:quantum/data/models/products_response_model.dart';
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
 
 import '../../utils/custom_themes.dart';
 import '../../utils/dimensions.dart';
@@ -57,7 +58,8 @@ class _ProductDetailState extends State<ProductDetail> {
                 child: Column(
                   children: [
                     ProductImageView(
-                      image: widget.product.imageProduct!,
+                      image: GlobalVariables.baseUrl +
+                          widget.product.imageProduct!,
                     ),
                     Container(
                       transform: Matrix4.translationValues(0.0, -25.0, 0.0),

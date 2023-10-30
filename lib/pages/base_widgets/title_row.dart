@@ -36,6 +36,7 @@ class TitleRow extends StatelessWidget {
           (hours * 60 * 60) -
           (minutes * 60);
     }
+    
 
     return Container(
       decoration: isFlash
@@ -140,7 +141,23 @@ class TitleRow extends StatelessWidget {
                     onTap: onTap as void Function()?,
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: []),
+                        children: [
+                          isDetailsPage == null
+                              ? Text('View All',
+                                  style: titilliumRegular.copyWith(
+                                    color: ColorResources.getArrowButtonColor(
+                                        context),
+                                    fontSize: Dimensions.fontSizeDefault,
+                                  ))
+                              : const SizedBox.shrink(),
+                          Icon(
+                            Icons.arrow_forward_outlined,
+                            color: isDetailsPage == null
+                                ? ColorResources.getArrowButtonColor(context)
+                                : Theme.of(context).hintColor,
+                            size: Dimensions.fontSizeDefault,
+                          ),
+                        ]),
                   )
                 : const SizedBox.shrink(),
       ]),

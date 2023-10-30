@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quantum/utils/color_resources.dart';
+import 'package:quantum_buyer_app/utils/color_resources.dart';
 
 import '../../utils/images.dart';
 import 'widgets/splash_painter.dart';

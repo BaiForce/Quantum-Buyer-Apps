@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quantum/utils/price_ext.dart';
+import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../../data/models/products_response_model.dart';
 import '../../../utils/color_resources.dart';

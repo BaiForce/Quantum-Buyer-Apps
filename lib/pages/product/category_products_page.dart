@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/bloc/products/products_bloc.dart';
+import 'package:quantum_buyer_app/bloc/products/products_bloc.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:quantum/data/models/products_response_model.dart';
+
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
+
 import '../../utils/color_resources.dart';
 import '../../utils/dimensions.dart';
 import '../base_widgets/custom_app_bar.dart';

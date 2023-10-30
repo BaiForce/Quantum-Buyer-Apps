@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
-import 'package:quantum/data/datasources/category_remote_datasource.dart';
-import 'package:quantum/data/models/categories_response_model.dart';
+import 'package:quantum_buyer_app/data/datasources/category_remote_datasource.dart';
+import 'package:quantum_buyer_app/data/models/categories_response_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'categories_event.dart';

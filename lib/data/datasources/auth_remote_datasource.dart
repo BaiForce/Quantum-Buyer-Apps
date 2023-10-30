@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
-import 'package:quantum/common/global_variables.dart';
-import 'package:quantum/data/datasources/auth_local_datasource.dart';
-import 'package:quantum/data/models/auth_response_model.dart';
-import 'package:quantum/data/models/request/login_request_model.dart';
-import 'package:quantum/data/models/request/register_request_model.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
+import 'package:quantum_buyer_app/data/datasources/auth_local_datasource.dart';
+import 'package:quantum_buyer_app/data/models/auth_response_model.dart';
+import 'package:quantum_buyer_app/data/models/request/login_request_model.dart';
+import 'package:quantum_buyer_app/data/models/request/register_request_model.dart';
 import 'package:http/http.dart' as http;
 
 class AuthRemoteDatasource {

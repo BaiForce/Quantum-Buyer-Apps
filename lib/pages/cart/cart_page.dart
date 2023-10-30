@@ -1,7 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quantum/utils/price_ext.dart';
+import 'package:quantum_buyer_app/utils/color_resources.dart';
+import 'package:quantum_buyer_app/utils/images.dart';
+import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../bloc/checkout/checkout_bloc.dart';
 import '../../utils/custom_themes.dart';
@@ -210,3 +212,4 @@ class CartPageState extends State<CartPage> {
     );
   }
 }
+

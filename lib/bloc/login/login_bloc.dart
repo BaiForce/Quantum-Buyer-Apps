@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:quantum/data/datasources/auth_remote_datasource.dart';
-import 'package:quantum/data/models/auth_response_model.dart';
-import 'package:quantum/data/models/request/login_request_model.dart';
+import 'package:quantum_buyer_app/data/datasources/auth_remote_datasource.dart';
+import 'package:quantum_buyer_app/data/models/auth_response_model.dart';
+import 'package:quantum_buyer_app/data/models/request/login_request_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'login_event.dart';

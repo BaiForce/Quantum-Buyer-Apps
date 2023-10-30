@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:quantum/data/models/products_response_model.dart';
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
 
 import '../../../bloc/checkout/checkout_bloc.dart';
 import '../../../utils/color_resources.dart';

@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:quantum/data/models/order_response_model.dart';
-import 'package:quantum/data/models/request/order_request_model.dart';
+import 'package:quantum_buyer_app/data/models/order_response_model.dart';
+import 'package:quantum_buyer_app/data/models/request/order_request_model.dart';
 import 'package:http/http.dart' as http;
 
 import '../../common/global_variables.dart';

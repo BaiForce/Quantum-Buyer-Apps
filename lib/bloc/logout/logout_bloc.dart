@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:quantum/data/datasources/auth_remote_datasource.dart';
+import 'package:quantum_buyer_app/data/datasources/auth_remote_datasource.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'logout_event.dart';

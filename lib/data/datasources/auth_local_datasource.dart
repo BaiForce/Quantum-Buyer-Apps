@@ -1,4 +1,4 @@
-import 'package:quantum/data/models/auth_response_model.dart';
+import 'package:quantum_buyer_app/data/models/auth_response_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthLocalDatasource {

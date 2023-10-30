@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:quantum/bloc/checkout/checkout_bloc.dart';
-import 'package:quantum/utils/price_ext.dart';
+import 'package:quantum_buyer_app/bloc/checkout/checkout_bloc.dart';
+import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../../utils/color_resources.dart';
 import '../../../utils/custom_themes.dart';
@@ -21,9 +21,7 @@ class CartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-      
-      },
+      onTap: () {},
       child: Container(
         margin: const EdgeInsets.only(top: Dimensions.paddingSizeSmall),
         padding: const EdgeInsets.all(Dimensions.paddingSizeSmall),

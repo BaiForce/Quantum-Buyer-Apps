@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:quantum/common/global_variables.dart';
-import 'package:quantum/data/models/products_response_model.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
+import 'package:quantum_buyer_app/data/models/products_response_model.dart';
 import 'package:http/http.dart' as http;
 
 class ProductRemoteDatasource {
@@ -17,7 +17,7 @@ class ProductRemoteDatasource {
     if (response.statusCode == 200) {
       return Right(ProductsResponseModel.fromJson(response.body));
     } else {
-      return const Left('Server Error, please Check Your Connections');
+      return const Left('Server Error, please contact admin');
     }
   }
 
@@ -36,7 +36,7 @@ class ProductRemoteDatasource {
     if (response.statusCode == 200) {
       return Right(ProductsResponseModel.fromJson(response.body));
     } else {
-      return const Left('Server Error, please Check Your Connections');
+      return const Left('Server Error, please contact admin');
     }
   }
 }
