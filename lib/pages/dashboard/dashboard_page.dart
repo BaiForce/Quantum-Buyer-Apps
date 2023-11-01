@@ -36,9 +36,9 @@ class _HomePageState extends State<DashboardPage> {
 
     _screens = [
       HomePage(),
-      const Center(
-        child: Text('Order'),
-      ),
+      // const Center(
+      //   child: Text('Order'),
+      // ),
       Center(
         child: BlocConsumer<LogoutBloc, LogoutState>(
           listener: (context, state) {
@@ -149,10 +149,8 @@ class _HomePageState extends State<DashboardPage> {
   List<BottomNavigationBarItem> _getBottomWidget(bool isSingleVendor) {
     List<BottomNavigationBarItem> list = [];
     list.add(_barItem(Images.homeImage, 'Home', 0));
-    list.add(_barItem(Images.shoppingImage, 'Orders', 1));
-    list.add(_barItem(Images.moreImage, 'More', 2));
+    // list.add(_barItem(Images.shoppingImage, 'Orders', 1));
+    list.add(_barItem(Images.moreImage, 'More', 1));
     return list;
   }
 }
-
-

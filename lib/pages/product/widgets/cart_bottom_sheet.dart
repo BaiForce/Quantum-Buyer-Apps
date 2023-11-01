@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quantum_buyer_app/bloc/checkout/checkout_bloc.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 import 'package:quantum_buyer_app/utils/price_ext.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -91,7 +92,8 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                             borderRadius: BorderRadius.circular(5),
                             child: FadeInImage.assetNetwork(
                               placeholder: Images.placeholder,
-                              image: widget.product.imageProduct!,
+                              image: GlobalVariables.baseUrl +
+                                  widget.product.imageProduct!,
                               imageErrorBuilder: (c, o, s) =>
                                   Image.asset(Images.placeholder),
                             ),

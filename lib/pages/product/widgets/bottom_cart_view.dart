@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 
 import 'package:quantum_buyer_app/data/models/products_response_model.dart';
 

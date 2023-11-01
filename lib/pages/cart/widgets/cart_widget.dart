@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:quantum_buyer_app/bloc/checkout/checkout_bloc.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 import 'package:quantum_buyer_app/utils/price_ext.dart';
 
 import '../../../utils/color_resources.dart';
@@ -46,7 +47,8 @@ class CartWidget extends StatelessWidget {
                     placeholder: Images.placeholder,
                     height: 60,
                     width: 60,
-                    image: productQuantity.product.imageProduct!,
+                    image: GlobalVariables.baseUrl +
+                        productQuantity.product.imageProduct!,
                     imageErrorBuilder: (c, o, s) => Image.asset(
                       Images.placeholder,
                       fit: BoxFit.cover,

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quantum_buyer_app/bloc/order/order_bloc.dart';
 import 'package:quantum_buyer_app/data/models/request/order_request_model.dart';
 import 'package:quantum_buyer_app/utils/price_ext.dart';
+import 'package:quantum_buyer_app/common/global_variables.dart';
 
 import '../../bloc/checkout/checkout_bloc.dart';
 import '../../utils/color_resources.dart';
@@ -118,7 +119,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                             fit: BoxFit.cover,
                             width: 50,
                             height: 50,
-                            image: productQuantity.product.imageProduct!,
+                            image: GlobalVariables.baseUrl +
+                                productQuantity.product.imageProduct!,
                             imageErrorBuilder: (c, o, s) => Image.asset(
                                 Images.placeholder,
                                 fit: BoxFit.cover,
