@@ -36,9 +36,7 @@ class _HomePageState extends State<DashboardPage> {
 
     _screens = [
       HomePage(),
-      // const Center(
-      //   child: Text('Order'),
-      // ),
+      
       Center(
         child: BlocConsumer<LogoutBloc, LogoutState>(
           listener: (context, state) {
