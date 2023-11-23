@@ -37,17 +37,7 @@ class CategoryWidget extends StatelessWidget {
               physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
                 return InkWell(
-                  onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //     builder: (_) => const CategoryProductsPage(
-                    //       isBrand: false,
-                    //       id: '1',
-                    //     ),
-                    //   ),
-                    // );
-                  },
+                  onTap: () {},
                   child: CategoryItemWiget(
                     category: model.data![index],
                   ),

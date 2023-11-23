@@ -36,7 +36,6 @@ class TitleRow extends StatelessWidget {
           (hours * 60 * 60) -
           (minutes * 60);
     }
-    
 
     return Container(
       decoration: isFlash
@@ -143,7 +142,7 @@ class TitleRow extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           isDetailsPage == null
-                              ? Text('View All',
+                              ? Text('',
                                   style: titilliumRegular.copyWith(
                                     color: ColorResources.getArrowButtonColor(
                                         context),

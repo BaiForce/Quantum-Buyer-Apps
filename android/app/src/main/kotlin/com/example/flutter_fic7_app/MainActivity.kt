@@ -1,4 +1,4 @@
-package com.example.quantum_buyer_app
+package com.quantum_buyer_app23
 
 import io.flutter.embedding.android.FlutterActivity
 

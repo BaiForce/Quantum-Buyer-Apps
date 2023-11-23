@@ -28,7 +28,6 @@ class CartBottomSheet extends StatefulWidget {
 }
 
 class CartBottomSheetState extends State<CartBottomSheet> {
-  // route(bool isRoute, String message) async {}
   int quantity = 1;
   @override
   void initState() {
@@ -137,12 +136,6 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                 const SizedBox(
                   width: 8,
                 ),
-                // QuantityButton(
-                //     isIncrement: false,
-                //     quantity: quantity1,
-                //     stock: 10,
-                //     minimumOrderQuantity: 1,
-                //     digitalProduct: true),
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
@@ -166,12 +159,6 @@ class CartBottomSheetState extends State<CartBottomSheet> {
                   },
                   child: const Text('+'),
                 ),
-                // QuantityButton(
-                //     isIncrement: true,
-                //     quantity: quantity1,
-                //     stock: 10,
-                //     minimumOrderQuantity: 1,
-                //     digitalProduct: true),
               ]),
               const SizedBox(height: Dimensions.paddingSizeSmall),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -232,21 +219,7 @@ class QuantityButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () {
-        // if (!isIncrement && quantity! > 1) {
-        //   if (quantity! > minimumOrderQuantity!) {
-        //   } else {
-        //     Fluttertoast.showToast(
-        //         msg: 'minimum qty 1',
-        //         toastLength: Toast.LENGTH_SHORT,
-        //         gravity: ToastGravity.BOTTOM,
-        //         timeInSecForIosWeb: 1,
-        //         backgroundColor: Colors.red,
-        //         textColor: Colors.white,
-        //         fontSize: 16.0);
-        //   }
-        // } else if (isIncrement && quantity! < stock! || digitalProduct) {}
-      },
+      onPressed: () {},
       icon: Container(
         width: 40,
         height: 40,

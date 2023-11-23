@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
                 centerTitle: false,
                 automaticallyImplyLeading: false,
                 backgroundColor: Theme.of(context).highlightColor,
-                title: Image.asset(Images.logoWithNameImage, height: 49),
+                title: Image.asset(Images.logoWithNameImage, height: 50),
                 actions: [
                   Padding(
                     padding: const EdgeInsets.only(right: 12.0),

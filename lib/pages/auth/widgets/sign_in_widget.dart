@@ -104,25 +104,6 @@ class SignInWidgetState extends State<SignInWidget> {
               margin: const EdgeInsets.only(right: Dimensions.marginSizeSmall),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // // Row(
-                  // //   children: [
-                  // //     Checkbox(
-                  // //       checkColor: ColorResources.white,
-                  // //       activeColor: Theme.of(context).primaryColor,
-                  // //       value: false,
-                  // //       onChanged: (val) {},
-                  // //     ),
-                  // //     const Text('Remember', style: titilliumRegular),
-                  // //   ],
-                  // // ),
-                  // InkWell(
-                  //   onTap: () {},
-                  //   child: Text('Forgot Password',
-                  //       style: titilliumRegular.copyWith(
-                  //           color: ColorResources.getLightSkyBlue(context))),
-                  // ),
-                ],
               ),
             ),
             Container(
@@ -174,7 +155,7 @@ class SignInWidgetState extends State<SignInWidget> {
             GestureDetector(
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return const DashboardPage(); 
+                  return const DashboardPage();
                 }));
               },
               child: Container(

@@ -36,7 +36,6 @@ class _HomePageState extends State<DashboardPage> {
 
     _screens = [
       HomePage(),
-      
       Center(
         child: BlocConsumer<LogoutBloc, LogoutState>(
           listener: (context, state) {
@@ -100,7 +99,6 @@ class _HomePageState extends State<DashboardPage> {
         controller: _pageController,
         itemCount: _screens.length,
         physics: const BouncingScrollPhysics(),
-        // physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) {
           return _screens[index];
         },
@@ -112,31 +110,23 @@ class _HomePageState extends State<DashboardPage> {
     setState(() {
       _pageController.animateToPage(
         pageIndex,
-        duration: Duration(milliseconds: 500), // Adjust the duration as needed
-        curve: Curves.easeInOut, // Use the desired animation curve
+        duration: Duration(milliseconds: 500),
+        curve: Curves.easeInOut,
       );
       _pageIndex = pageIndex;
     });
-    // setState(() {
-    //   _pageController.jumpToPage(pageIndex);
-    //   _pageIndex = pageIndex;
-    // });
   }
 
   BottomNavigationBarItem _barItem(String icon, String? label, int index) {
-    bool isSelected = index == _pageIndex; // Check if this item is selected
+    bool isSelected = index == _pageIndex;
     Color iconColor = isSelected
-        ? Theme.of(context).primaryColor // Color when selected
-        : Theme.of(context)
-            .textTheme
-            .bodyLarge!
-            .color!
-            .withOpacity(0.5); // Color when not selected
+        ? Theme.of(context).primaryColor
+        : Theme.of(context).textTheme.bodyLarge!.color!.withOpacity(0.5);
 
     return BottomNavigationBarItem(
       icon: Image.asset(
         icon,
-        color: iconColor, // Use the computed color
+        color: iconColor,
         height: 25,
         width: 25,
       ),
@@ -147,7 +137,6 @@ class _HomePageState extends State<DashboardPage> {
   List<BottomNavigationBarItem> _getBottomWidget(bool isSingleVendor) {
     List<BottomNavigationBarItem> list = [];
     list.add(_barItem(Images.homeImage, 'Home', 0));
-    // list.add(_barItem(Images.shoppingImage, 'Orders', 1));
     list.add(_barItem(Images.moreImage, 'More', 1));
     return list;
   }

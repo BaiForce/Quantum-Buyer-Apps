@@ -8,7 +8,6 @@ import '../../../utils/color_resources.dart';
 import '../../../utils/custom_themes.dart';
 import '../../../utils/dimensions.dart';
 import '../../../utils/images.dart';
-import '../../base_widgets/rating_bar.dart';
 import '../../product/product_detail.dart';
 
 class ProductItemWidget extends StatelessWidget {
@@ -84,7 +83,7 @@ class ProductItemWidget extends StatelessWidget {
                     Text(product.name ?? '-',
                         textAlign: TextAlign.center,
                         style: robotoRegular.copyWith(
-                            fontSize: Dimensions.fontSizeSmall,
+                            fontSize: Dimensions.fontSizeLarge,
                             fontWeight: FontWeight.w400),
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis),
@@ -105,7 +104,7 @@ class ProductItemWidget extends StatelessWidget {
             ),
           ]),
 
-          // Off
+          
 
           const SizedBox.shrink(),
         ]),

@@ -212,4 +212,3 @@ class CartPageState extends State<CartPage> {
     );
   }
 }
-
